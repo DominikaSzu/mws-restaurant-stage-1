@@ -1,3 +1,16 @@
+    if ('serviceWorker' in navigator) {
+
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('index.js').then(function(reg) {
+                console.log("Service Worker successfuly registered with scope:", reg.scope);
+            }).catch(function(error) {
+                console.log("Service Worker is not registered because of this error:", error);
+            });
+        })
+    };
+
+
+
 let restaurants,
   neighborhoods,
   cuisines
@@ -209,4 +222,6 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
+
+
 
