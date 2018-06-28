@@ -98,7 +98,7 @@
 
      updateRestaurants();
  }
- /* window.initMap = () => {
+  window.initMap = () => {
    let loc = {
      lat: 40.722216,
      lng: -73.987501
@@ -109,7 +109,7 @@
      scrollwheel: false
    });
    updateRestaurants();
- } */
+ } 
 
  /**
   * Update page and map for current restaurants.
@@ -210,7 +210,7 @@
      });
 
  }
- /* addMarkersToMap = (restaurants = self.restaurants) => {
+  addMarkersToMap = (restaurants = self.restaurants) => {
    restaurants.forEach(restaurant => {
      // Add marker to the map
      const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.map);
@@ -219,4 +219,4 @@
      });
      self.markers.push(marker);
    });
- } */
+ } 
