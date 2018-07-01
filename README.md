@@ -1,4 +1,4 @@
-#### _Udacity Frontend Nanodegree Restaurant Reviews Project_
+# Udacity Frontend Nanodegree Restaurant Reviews Project
 
 ### Specification
 
