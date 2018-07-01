@@ -147,12 +147,17 @@ class DBHelper {
   }
 
   /**
-   * Restaurant image URL.
+   * Restaurant image URL. 
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+    if (window.screen.width < 350) {
+       return (`/img/small/${restaurant.photograph}`);
+  } else if ((window.screen.width > 351) && (window.screen.width < 750)) {
+      return (`/img/medium/${restaurant.photograph}`);
+  } else {
+      return (`/img/${restaurant.photograph}`);
+  };
   }
-
   /**
    * Map marker for a restaurant.
    */
